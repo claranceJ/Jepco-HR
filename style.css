@@ -1,14 +1,85 @@
+/* Global styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+  margin: 20px 0;
+}
+
+/* Table styles */
 table {
-    width: 100%;
-    border-collapse: collapse;
-  }
-  
-  th, td {
-    border: 1px solid #dddddd;
-    padding: 8px;
-    text-align: left;
-  }
-  
-  th {
-    background-color: #dddddd;
-  }
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #ddd;
+  font-weight: bold;
+}
+
+/* Filter section styles */
+.filter-section {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.filter-section input[type="text"] {
+  padding: 10px;
+  font-size: 14px;
+  width: 200px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-right: 20px;
+}
+
+.filter-section select {
+  padding: 10px;
+  font-size: 14px;
+  width: 200px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.filter-section button {
+  padding: 10px 20px;
+  background-color: #00bfff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+/* Pagination styles */
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.pagination a {
+  padding: 10px 20px;
+  background-color: #00bfff;
+  color: #fff;
+  border-radius: 5px;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.pagination .current {
+  background-color: #ddd;
+  color: #333;
+  cursor: default;
+}
